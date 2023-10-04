@@ -1,29 +1,23 @@
-# README #
+---
+# ms-dacs2013-backend
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Microservicio para backend con base de datos postgres
+# Levantar en entorno local
+```
+mvn clean spring-boot:run
+```
 
-### What is this repository for? ###
+Opcionalmente se puede agregar el paŕametro:
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+-P local
 
-### How do I get set up? ###
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
 
-### Contribution guidelines ###
+### API de Prueba
 
-* Writing tests
-* Code review
-* Other guidelines
+Para chequear que la aplicacion levanto correctamente (Procedemos a consumir el servicio "/metrics/health"):
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+```
+http://localhost:9003/metrics/health
+```
