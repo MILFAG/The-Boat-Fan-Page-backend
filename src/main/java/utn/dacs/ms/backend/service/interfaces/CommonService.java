@@ -1,4 +1,4 @@
-package utn.dacs.ms.backend.service;
+package utn.dacs.ms.backend.service.interfaces;
 
 import java.util.List;
 import java.util.Map;

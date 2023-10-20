@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import utn.dacs.ms.backend.dto.AlumnoDto;
 import utn.dacs.ms.backend.exceptions.ResourceNotFoundException;
 import utn.dacs.ms.backend.model.entity.Alumno;
-import utn.dacs.ms.backend.service.AlumnoService;
+import utn.dacs.ms.backend.service.interfaces.AlumnoService;
 
 @RestController
 @RequestMapping(value = "/alumno")

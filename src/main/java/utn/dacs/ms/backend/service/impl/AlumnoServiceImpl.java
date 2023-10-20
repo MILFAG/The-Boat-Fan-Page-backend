@@ -1,4 +1,4 @@
-package utn.dacs.ms.backend.service;
+package utn.dacs.ms.backend.service.impl;
 
 import java.util.List;
 import java.util.Map;
@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import utn.dacs.ms.backend.model.entity.Alumno;
 import utn.dacs.ms.backend.model.repository.AlumnoRepository;
+import utn.dacs.ms.backend.service.interfaces.AlumnoService;
 
 @Service
 public class AlumnoServiceImpl implements AlumnoService {
