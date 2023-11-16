@@ -1,6 +1,5 @@
 package utn.dacs.ms.backend.service.impl;
 import org.springframework.stereotype.Service;
-import utn.dacs.ms.backend.model.entity.Alumno;
 import utn.dacs.ms.backend.model.entity.Fan;
 import utn.dacs.ms.backend.model.repository.FanRepository;
 import utn.dacs.ms.backend.service.interfaces.FanService;

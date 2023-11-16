@@ -6,16 +6,16 @@ import java.util.List;
 
 @Data
 @Entity
-public class Partida {
+public class Encuentro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idPartida;
+    private Long idEncuentro;
     private Date fecha;
     @ManyToMany
     @JoinTable(
-            name = "jugador_juega_partida",
+            name = "jugador_juega_encuentro",
             joinColumns = @JoinColumn(name = "idJugador"),
-            inverseJoinColumns = @JoinColumn(name = "idPartida")
+            inverseJoinColumns = @JoinColumn(name = "idEncuentro")
     )
     private List<Jugador> jugadores;
 }

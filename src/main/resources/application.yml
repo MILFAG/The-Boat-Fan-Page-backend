@@ -35,4 +35,4 @@ dacs:
 server:
   port :  ${CONECTOR_PORT:9003}
   servlet:
-    contextPath: /backend
+    contextPath: /
