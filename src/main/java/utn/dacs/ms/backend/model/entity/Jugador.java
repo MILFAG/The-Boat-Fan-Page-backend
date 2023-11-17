@@ -1,6 +1,8 @@
 package utn.dacs.ms.backend.model.entity;
 import lombok.Data;
 import javax.persistence.*;
+import java.util.Date;
+
 @Data
 @Entity
 public class Jugador {
@@ -10,7 +12,8 @@ public class Jugador {
     private String usuario;
     private String tag;
     private String nombre;
-    private int edad;
+    private String apellido;
+    private Date fechaNacimiento;
     private String  nombreAgente;
 
 }
