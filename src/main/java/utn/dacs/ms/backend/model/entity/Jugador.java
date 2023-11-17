@@ -11,5 +11,8 @@ public class Jugador {
     private String tag;
     private String nombre;
     private int edad;
+    @ManyToOne
+    @JoinColumn(name = "idAgente")
+    private Agente agente;
 
 }

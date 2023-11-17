@@ -7,9 +7,9 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class Personaje {
+public class Agente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idPersonaje;
+    private Long idAgente;
     private String nombre;
 }

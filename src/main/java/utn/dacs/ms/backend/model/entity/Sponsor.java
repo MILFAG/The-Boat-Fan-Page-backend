@@ -11,7 +11,5 @@ public class Sponsor {
     private Long idSponsor;
     private String nombre;
     private String logo;
-    @ManyToOne
-    @JoinColumn(name = "nivel_sponsor", referencedColumnName = "id_nivel_sponsor")
-    private NivelSponsor nivel;
+    private String nivelSponsor;
 }
