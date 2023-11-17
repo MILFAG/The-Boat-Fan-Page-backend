@@ -7,5 +7,6 @@ public class JugadorDTO {
     private String tag;
     private String nombre;
     private int edad;
+    private String nombreAgente;
 
 }
