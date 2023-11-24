@@ -1,5 +1,7 @@
 package utn.dacs.ms.backend.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import utn.dacs.ms.backend.model.entity.Jugador;
 import utn.dacs.ms.backend.model.repository.JugadorRepository;
