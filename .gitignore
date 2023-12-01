@@ -40,6 +40,8 @@ Thumbs.db
 *.exe
 *.war
 
+*.properties
+
 # Large media files
 *.mp4
 *.tiff

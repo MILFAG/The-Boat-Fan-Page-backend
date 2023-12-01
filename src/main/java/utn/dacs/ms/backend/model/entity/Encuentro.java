@@ -11,11 +11,14 @@ public class Encuentro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idEncuentro;
     private Date fecha;
-    @ManyToMany
+    private String rival;
+    private String imagenRival;
+
+  /*  @ManyToMany
     @JoinTable(
             name = "jugador_juega_encuentro",
             joinColumns = @JoinColumn(name = "idJugador"),
             inverseJoinColumns = @JoinColumn(name = "idEncuentro")
     )
-    private List<Jugador> jugadores;
+    private List<Jugador> jugadores;*/
 }
