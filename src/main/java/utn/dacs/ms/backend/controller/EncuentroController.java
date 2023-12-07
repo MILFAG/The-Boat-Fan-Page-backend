@@ -31,6 +31,14 @@ public class EncuentroController {
         return new ResponseEntity<List<EncuentroDTO>>(data, HttpStatus.OK);
     }
 
+    @GetMapping("/proximos")
+    public ResponseEntity<List<EncuentroDTO>> getProximos() {
+        List<Encuentro> encuentros = encuentroService.getProximos();
+        List<EncuentroDTO> data = encuentros.stream().map(encuentro -> modelMapper.map(encuentro, EncuentroDTO.class))
+                .collect(Collectors.toList());
+        return new ResponseEntity<List<EncuentroDTO>>(data, HttpStatus.OK);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<EncuentroDTO> getById(@PathVariable(value = "id") Long id) throws ResourceNotFoundException {
         Optional<Encuentro> encuentro = encuentroService.getById(id);

@@ -5,6 +5,7 @@ import utn.dacs.ms.backend.model.entity.Encuentro;
 import utn.dacs.ms.backend.model.repository.EncuentroRepository;
 import utn.dacs.ms.backend.service.interfaces.EncuentroService;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -23,6 +24,9 @@ public class EncuentroServiceImpl implements EncuentroService {
         return encuentroRepository.findAll();
     }
 
+    public List<Encuentro> getProximos(){
+        return encuentroRepository.findAll().stream().filter(encuentro -> encuentro.getFecha().compareTo(new Date())>=0).toList();
+    }
 
 
     @Override
